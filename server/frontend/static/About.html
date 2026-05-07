@@ -1,68 +1,190 @@
 <html>
 <head>
-  <!-- Link the style sheet here -->
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+
+  <style>
+    body {
+      background-color: #f4f7f9;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .navbar {
+      background-color: #0d6efd !important;
+      height: 90px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    }
+
+    .navbar h2,
+    .navbar a {
+      color: white !important;
+    }
+
+    .navbar a.active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    .about-container {
+      width: 85%;
+      margin: 50px auto;
+      background-color: white;
+      border-radius: 14px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+      padding: 40px;
+    }
+
+    .banner {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .banner h1 {
+      color: #1f2937;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .banner p {
+      color: #555;
+      font-size: 18px;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    .team-section {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .team-card {
+      width: 30%;
+      min-width: 260px;
+      border: none;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 14px rgba(0, 0, 0, 0.10);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .team-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .team-card img {
+      height: 280px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 22px;
+    }
+
+    .title {
+      font-size: 22px;
+      font-weight: bold;
+      color: #1f2937;
+      margin-bottom: 5px;
+    }
+
+    .role {
+      color: #0d6efd;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .card-text {
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .email {
+      color: #333;
+      font-weight: 500;
+      margin-top: 15px;
+    }
+  </style>
 </head>
-<div>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
-    <div class="container-fluid">
-      <h2 style="padding-right: 5%;">Dealerships</h2>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
-          </li>
-        </ul>
+
+<body>
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <h2 style="padding-right: 5%;">Dealerships</h2>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-  
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
+    </nav>
+
+    <div class="about-container">
       <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
-        </div>
+        <h1>About Us</h1>
+        <p>
+          Welcome to Best Cars Dealership, a trusted destination for quality new and pre-owned vehicles across North America.
+          Our team is committed to helping customers find reliable domestic and imported cars at competitive prices, while
+          providing honest guidance, flexible options, and excellent after-sales support.
+        </p>
       </div>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
+      <div class="team-section">
+        <div class="card team-card">
+          <img class="card-img-top" src="https://randomuser.me/api/portraits/men/32.jpg" alt="James Carter">
+          <div class="card-body">
+            <p class="title">James Carter</p>
+            <p class="role">General Manager</p>
+            <p class="card-text">
+              James oversees dealership operations and ensures every customer receives professional, transparent, and friendly service.
+            </p>
+            <p class="email">james.carter@bestcars.com</p>
+          </div>
         </div>
-      </div>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
+        <div class="card team-card">
+          <img class="card-img-top" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Emily Rodriguez">
+          <div class="card-body">
+            <p class="title">Emily Rodriguez</p>
+            <p class="role">Sales Consultant</p>
+            <p class="card-text">
+              Emily helps customers compare vehicles, understand features, and choose the right car based on their needs and budget.
+            </p>
+            <p class="email">emily.rodriguez@bestcars.com</p>
+          </div>
+        </div>
+
+        <div class="card team-card">
+          <img class="card-img-top" src="https://randomuser.me/api/portraits/men/75.jpg" alt="Michael Thompson">
+          <div class="card-body">
+            <p class="title">Michael Thompson</p>
+            <p class="role">Finance Specialist</p>
+            <p class="card-text">
+              Michael works with customers to review financing options, explain payment plans, and make the purchase process simple.
+            </p>
+            <p class="email">michael.thompson@bestcars.com</p>
+          </div>
         </div>
       </div>
     </div>
-    </div>
-    </div>
-    
-</div>
-
+  </div>
+</body>
 </html>

@@ -1,0 +1,190 @@
+<html>
+<head>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+
+  <style>
+    body {
+      background-color: #f4f7f9;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .navbar {
+      background-color: #0d6efd !important;
+      height: 90px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    }
+
+    .navbar h2,
+    .navbar a {
+      color: white !important;
+    }
+
+    .navbar a.active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    .contact-container {
+      width: 85%;
+      margin: 50px auto;
+      background-color: white;
+      border-radius: 14px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+      padding: 40px;
+    }
+
+    .banner {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .banner h1 {
+      color: #1f2937;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .banner p {
+      color: #555;
+      font-size: 18px;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    .contact-section {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .contact-card {
+      width: 30%;
+      min-width: 260px;
+      border: none;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 3px 14px rgba(0, 0, 0, 0.10);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .contact-card h3 {
+      color: #1f2937;
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .contact-card p {
+      color: #555;
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 8px;
+    }
+
+    .contact-label {
+      color: #0d6efd;
+      font-weight: bold;
+    }
+
+    .hours {
+      margin-top: 35px;
+      background-color: #f8fafc;
+      border-radius: 12px;
+      padding: 25px;
+      text-align: center;
+    }
+
+    .hours h3 {
+      color: #1f2937;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .hours p {
+      color: #555;
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <h2 style="padding-right: 5%;">Dealerships</h2>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="contact-container">
+      <div class="banner" name="contact-header">
+        <h1>Contact Us</h1>
+        <p>
+          Have questions about a vehicle, financing, trade-ins, or service appointments?
+          Our team is here to help you find the right car and make your dealership experience simple and stress-free.
+        </p>
+      </div>
+
+      <div class="contact-section">
+        <div class="contact-card">
+          <h3>Visit Our Showroom</h3>
+          <p><span class="contact-label">Best Cars Dealership</span></p>
+          <p>2450 Auto Park Avenue</p>
+          <p>Toronto, ON M5V 2T6</p>
+          <p>Canada</p>
+        </div>
+
+        <div class="contact-card">
+          <h3>Contact Details</h3>
+          <p><span class="contact-label">Phone:</span> +1 416-555-0198</p>
+          <p><span class="contact-label">Sales:</span> sales@bestcars.com</p>
+          <p><span class="contact-label">Service:</span> service@bestcars.com</p>
+          <p><span class="contact-label">Support:</span> support@bestcars.com</p>
+        </div>
+
+        <div class="contact-card">
+          <h3>Customer Support</h3>
+          <p>
+            Our customer care team can help with vehicle availability, test drive bookings,
+            financing questions, warranty information, and service follow-ups.
+          </p>
+          <p><span class="contact-label">Response Time:</span> Within 1 business day</p>
+        </div>
+      </div>
+
+      <div class="hours">
+        <h3>Business Hours</h3>
+        <p><span class="contact-label">Monday - Friday:</span> 9:00 AM - 7:00 PM</p>
+        <p><span class="contact-label">Saturday:</span> 10:00 AM - 5:00 PM</p>
+        <p><span class="contact-label">Sunday:</span> Closed</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
